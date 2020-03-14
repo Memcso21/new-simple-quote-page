@@ -14,14 +14,18 @@ body {
   z-index: -1;
 }
 
-.wrapper {
-  display: block;
-  height: 60%;
-  width: 80%;
-  margin: 5rem auto;
-  padding: 2rem 4rem;
-  text-align: center;
-  vertical-align: middle;
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  padding-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
 }
 
 .quote {
@@ -29,6 +33,7 @@ body {
   font-size: 2.5rem;
   line-height: 3.5rem;
   padding-bottom: 6rem;
+  text-align: center;
 }
 
 .author {
@@ -45,28 +50,163 @@ body {
   vertical-align: middle;
 }
 
-/* === MEDIA QUIRES === */
+/* === MEDIA QUEIRES === */
 
-@media (max-width: 768px) {
-  body {
-    background-size: cover;
+@media (min-width: 280px) {
+  .flex-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 2rem;
   }
-    
-  .wrapper {
-    display: block;
-    height: auto;
-    width: auto;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
+  
+  .quote {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 1.5rem 2rem 3rem;
     text-align: center;
-    vertical-align: middle;
+  }
+
+  .author {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+  }
+  
+  .author::before {
+    width: 0.5rem;
+  }
+  
+}
+
+@media (min-width: 320px) {
+  .flex-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+  
+  .quote {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1rem 2rem 3rem;
+    text-align: center;
+  }
+
+  .author {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+  }
+  
+  .author::before {
+    width: 0.5rem;
+  }
+  
+}
+
+
+@media (min-width: 480px) {
+  
+  .flex-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 3rem;
+  }
+  
+  .quote {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  .author {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+  }
+  
+  .author::before {
+    width: 0.6rem;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  
+  .flex-wrapper {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+  
+  .quote {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    padding: 3rem 3rem;
+    text-align: center;
+  }
+
+  .author {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.3rem;
+  }
+  
+  .author::before {
+    width: 0.6rem;
+  }
+  
+}
+  
+  
+@media (min-width: 992px) {
+  
+  .flex-wrapper {
+    margin-top: 1rem;
+    padding-top: 1rem;
   }
   
   .quote {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2rem;
     line-height: 3rem;
-    padding-bottom: 3rem;
+    padding: 3.5rem 4rem;
+    text-align: center;
   }
 
+  .author {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5rem;
+  }
+  
+  .author::before {
+    width: 0.8rem;
+  }
+  
 }
+
+@media (min-width: 1200px) {
+    
+  .flex-wrapper {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .quote {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.3rem;
+    line-height: 3.5rem;
+    padding: 4.5rem 3.5rem 6rem;
+    text-align: center;
+  }
+
+  .author {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5rem;
+  }
+  
+  .author::before {
+    width: 0.9rem;
+  }
+}
+
+  
+
+ 
