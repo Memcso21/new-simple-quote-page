@@ -78,9 +78,8 @@ ul > li:last-child {
 
 a {
   text-decoration: none;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: rgb(250, 250, 250, 0.8);
-  font-weight: bold;
   font-size: 1.3rem;
   cursor: pointer;
   border: 0.01px solid rgb(38, 38, 38, 0.5);
