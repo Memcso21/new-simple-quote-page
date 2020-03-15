@@ -1,0 +1,292 @@
+/* === MAIN STYLES === */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: rgb(38, 38, 38);
+  background-image: url(assets/freedom.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* === WRAPPER STYLES === */
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  padding-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+}
+
+.author {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.author::before {
+  display: inline-block;
+  content: "";
+  width: 0.8rem;
+  height: 1px;
+  background-color: rgb(38, 38, 38);
+  vertical-align: middle;
+}
+
+/* === NAVBAR === */
+
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 2.6rem;
+  justify-content: center;
+  position:fixed;
+  bottom: 5%;
+}
+
+.buttons {
+  display: flex;
+}
+
+ul > li:first-child {
+  padding-right: 0.5rem;
+}
+
+ul > li:last-child {
+  padding-left: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(250, 250, 250, 0.8);
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: 0.01px solid rgb(38, 38, 38, 0.5);
+  padding: 0.5rem;
+  background-color: rgb(38, 38, 38, 0.4); 
+}
+
+a:hover {
+  color: rgb(38, 38, 38);
+  font-weight: bold;
+  background-color: rgb(250, 250, 250, 0.5);
+}
+
+/* === MEDIA QUEIRES === */
+
+@media (min-width: 280px) {
+  .flex-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .quote {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 1.5rem 2rem 3rem;
+    text-align: center;
+  }
+
+  .author {
+   font-size: 1rem;
+  }
+  
+  .author::before {
+    width: 0.5rem;
+  }
+  
+  .flex-nav {
+    height: 2.4rem;
+  }
+  
+  a {
+    font-size: 1rem;
+  }
+  
+}
+
+@media (min-width: 320px) {
+  .flex-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+  
+  .quote {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1rem 2rem 3rem;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+  
+  .author::before {
+    width: 0.5rem;
+  }
+  
+   .flex-nav {
+    height: 2.5rem;
+  }
+  
+  a {
+    font-size: 1rem;
+  }
+  
+}
+
+
+@media (min-width: 480px) {
+  
+  .flex-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 3rem;
+  }
+  
+  .quote {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 0.8rem;
+  }
+  
+  .author::before {
+    width: 0.6rem;
+  }
+  
+   .flex-nav {
+    height: 2.5rem;
+  }
+  
+  a {
+    font-size: 1rem;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  
+  .flex-wrapper {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+  
+  .quote {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding: 3rem 3rem;
+    text-align: center;
+  }
+
+  .author {
+   font-size: 1.3rem;
+  }
+  
+  .author::before {
+    width: 0.6rem;
+  }
+  
+  .flex-nav {
+    height: 2rem;
+  }
+  
+  a {
+    font-size: 1.5rem;
+  }
+}
+  
+  
+@media (min-width: 992px) {
+  
+  .flex-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .quote {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    padding: 3rem 3rem;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 1.6rem;
+  }
+  
+  .author::before {
+    width: 0.6rem;
+  }
+  
+  .flex-nav {
+    height: 3rem;
+  }
+  
+  a {
+    font-size: 2rem;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+    
+  .flex-wrapper {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .quote {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    padding: 4.5rem 3.5rem 6rem;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 1.3rem;
+  }
+  
+  .author::before {
+    width: 0.9rem;
+  }
+  
+  .flex-nav {
+    height: 3rem;
+  }
+  
+  a {
+    font-size: 2rem;
+  }
+}
+
+  
+
+ 
